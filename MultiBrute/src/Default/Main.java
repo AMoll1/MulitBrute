@@ -5,13 +5,10 @@ import org.apache.commons.net.SocketClient;
 import org.apache.commons.net.ftp.FTP;
 import org.apache.commons.net.ftp.FTPClient;
 
-//import org.apache.commons.net.*;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -23,14 +20,14 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.nio.file.Path;
 
-import org.apache.commons.net.ftp.FTPFile;
+
 import org.apache.commons.net.ftp.FTPReply;
 import org.apache.commons.net.imap.IMAPClient;
 import org.apache.commons.net.nntp.NNTPClient;
 import org.apache.commons.net.pop3.POP3Client;
 import org.apache.commons.net.smtp.SMTPClient;
 import org.apache.commons.net.telnet.TelnetClient;
-import org.apache.commons.net.util.*;
+
 
 
 
@@ -53,7 +50,10 @@ public static	POP3Client		pop3client		=	new POP3Client();
 	    	
 		  
 			System.out.println("####### MultiBrute by Alexejewitsch #######");
-		  
+			System.out.println("FTP, Telnet");
+			
+			
+			
 		  //file create/check
 		  	createlog();
 		  	checkpassword();
@@ -76,6 +76,10 @@ public static	POP3Client		pop3client		=	new POP3Client();
 	   
 			
 			
+			
+			
+			//send magic packet
+			boolean magic=true;
 			
 			
 			
